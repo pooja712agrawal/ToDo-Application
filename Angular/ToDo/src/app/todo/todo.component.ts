@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Todo } from '../list-todos/list-todos.component';
 import { TodoDataService } from '../service/data/todo-data.service';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-todo',
@@ -13,11 +14,12 @@ export class TodoComponent implements OnInit {
   todo: Todo
   id: number
   username : any
-  minDate : Date  = new Date();
+  todayDate=this.datePipe.transform(new Date(), 'yyyy-MM-dd');
 
   constructor(private todoDataService: TodoDataService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    private datePipe: DatePipe) { }
 
   ngOnInit(): void {
     this.username = sessionStorage.getItem('authenticatedUser');

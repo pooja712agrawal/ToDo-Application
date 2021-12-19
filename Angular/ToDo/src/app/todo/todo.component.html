@@ -14,7 +14,7 @@
 
         <fieldset class="form-group">
             <label class="form-label">Target Date</label>
-            <input type="date" [ngModel]="todo.targetDate | date:'yyyy-MM-dd'" [min]="minDate"
+            <input type="date" [ngModel]="todo.targetDate | date:'yyyy-MM-dd'" [min]="todayDate"
                 (ngModelChange)="todo.targetDate = $event" #todoTargetDate="ngModel" class="form-control" name="targetDate" required="required">
         </fieldset>
 

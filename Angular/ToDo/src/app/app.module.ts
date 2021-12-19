@@ -16,6 +16,7 @@ import { HttpInterceptorBasicAuthService } from './service/http/http-interceptor
 import { TodoComponent } from './todo/todo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   //UserDefined Components
@@ -39,8 +40,9 @@ import { MaterialModule } from './modules/material/material.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [
+  providers: [    DatePipe,
     {provide : HTTP_INTERCEPTORS, useClass : HttpInterceptorBasicAuthService, multi : true}
+ 
   ],
   //Bootstrap component
   bootstrap: [AppComponent]
