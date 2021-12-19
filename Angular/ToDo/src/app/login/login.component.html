@@ -1,0 +1,18 @@
+
+ <form class="form-width text-center">
+  <div class="alert alert-warning" *ngIf = 'invalidLogin'>{{errorMsg}}</div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Username</label>
+      <input type="text" class="form-control form-fields" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" [(ngModel)]="username">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control form-fields" id="exampleInputPassword1" name = "password" [(ngModel)]="password" >
+    </div>
+   
+    <!-- <button type="submit" (click) = handleLogin() class="btn btn-primary button-css">Submit</button> -->
+    <button type="submit" (click) = handleBasicAuthLogin() class="btn btn-primary button-css">Submit</button>
+  </form> 
+
+
+  

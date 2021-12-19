@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-background">
+        <div><a href="" class="navbar-brand">MyToDo-App</a></div>
+
+        <ul class="navbar-nav">
+            <li><a *ngIf="hardcodedAuthentication. isUserLoggedIn()" routerLink="/welcome/poojaAgrawal" class="nav-link navbar-font-bold">Home</a></li>
+            <li><a *ngIf="hardcodedAuthentication. isUserLoggedIn()"  routerLink="/todos" class="nav-link navbar-font-bold">Todo</a></li>
+        </ul>
+
+        <!-- Using navbar-collapse justify-content-end classes we can set the content at the end of page (left corner) -->
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a *ngIf="!hardcodedAuthentication. isUserLoggedIn()"  routerLink="/login" class="nav-link navbar-font-bold">Login</a></li>
+            <li><a *ngIf="hardcodedAuthentication. isUserLoggedIn()"  routerLink="/logout" class="nav-link navbar-font-bold">Logout</a></li>
+        </ul>
+
+    </nav>
+
+</header>

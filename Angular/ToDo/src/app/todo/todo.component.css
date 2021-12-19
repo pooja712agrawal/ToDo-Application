@@ -1,0 +1,23 @@
+.ng-invalid:not(form){
+    border-left: 4px solid red;
+}
+
+.form-width{
+
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 40%; 
+    padding: 4%;
+    border-radius: 20px;
+    color: black;
+}
+
+.button-css{
+    margin-top: 10px;
+}
+
+.alert-form{
+    position: absolute;
+    top: 35%;
+}

@@ -1,0 +1,29 @@
+
+<div class="container" *ngIf = "errorMsgFromSpring">
+    {{errorMsgFromSpring}}
+ </div>
+ 
+<div *ngIf = "!errorMsgFromSpring">
+
+    <div class="container mt-2">
+        {{welcomeMsgFromSpring}}
+     </div>
+
+     <div class="container text-center heading-style">
+        Welcome To My Todo App
+     </div>
+      
+     <div class="container text-center content-font">
+        You can Add, Delete and Update your Todo list.
+     </div>
+  
+     <img src="../../assets/backgroud.jpg" class="img1 image-align" alt="cinque terre">
+
+<div>
+<!-- <div> {{name}}</div> -->
+<div class="text-center mt-4">
+    You can manage your todos <a routerLink="/todos">here</a>
+</div>
+
+</div>
+</div>

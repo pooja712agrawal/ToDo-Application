@@ -1,0 +1,9 @@
+.nav-background{
+    /* background-color: #1a75bb; */
+    background-color: black;
+    padding-left: 10px;
+}
+
+.navbar-font-bold{
+font-weight: 700;
+}

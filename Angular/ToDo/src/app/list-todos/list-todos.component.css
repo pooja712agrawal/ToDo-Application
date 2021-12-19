@@ -1,0 +1,23 @@
+.padding-top{
+    padding-top: 60px;
+}
+
+.table td .table th{
+    padding: 30px;
+}
+
+.button-width{
+    width: 130px;
+}
+
+.width-class{
+    width: fit-content;
+}
+
+.margin-top{
+    margin-top: 3%;
+}
+
+.thead-bg{
+    background: darkgray;
+}
