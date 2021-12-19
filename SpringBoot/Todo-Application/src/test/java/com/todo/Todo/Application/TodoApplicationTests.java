@@ -79,16 +79,19 @@ class TodoApplicationTests {
 		
 	}
 	
+	//Testcase to add  the TODO item
 	@Test
 	void createTodoTest() throws Exception {
 		
 		ObjectMapper objMapper = new ObjectMapper();
 		String jsonString = objMapper.writeValueAsString(todoObj);
 		
-		//when(todoJPARepository.save(any())).thenReturn(todoObj);
+		when(todoJPARepository.save(any())).thenReturn(todoObj);
 				
-		this.mockMvc.perform(post("/user/test/todos/"+todoObj.getId()).contentType(MediaType.APPLICATION_JSON)
-				.content(jsonString)).andDo(print()).andExpect(status().isCreated());
+		this.mockMvc.perform(post("/user/test/todos").contentType(MediaType.APPLICATION_JSON)
+				.content(jsonString))
+		        .andDo(print())
+		        .andExpect(status().isCreated());
 		
 	}
 	
