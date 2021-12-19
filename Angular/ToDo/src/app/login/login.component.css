@@ -26,3 +26,13 @@
     border-color: #1a75bb!important;
     /* color: black !important; */
 }
+
+.inputbox-style{
+    border: none !important;
+    border-bottom: 1px solid !important;
+    border-radius: 0px;
+}
+
+.label-style{
+    float: left;
+}

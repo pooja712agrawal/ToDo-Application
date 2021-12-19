@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark nav-background">
-        <div class="ml-2"><a href="" class="navbar-brand">MyToDo-App</a></div>
+        <div class="ml-2"><span class="navbar-brand">MyToDo-App</span></div>
 
         <ul class="navbar-nav">
             <li><a *ngIf="hardcodedAuthentication. isUserLoggedIn()" routerLink="/welcome/poojaAgrawal" class="nav-link navbar-font-bold">Home</a></li>
@@ -9,7 +9,7 @@
 
         <!-- Using navbar-collapse justify-content-end classes we can set the content at the end of page (left corner) -->
         <ul class="navbar-nav navbar-collapse justify-content-end mr-2">
-            <li><a *ngIf="!hardcodedAuthentication. isUserLoggedIn()"  routerLink="/login" class="nav-link navbar-font-bold">Login</a></li>
+            <!-- <li><a *ngIf="!hardcodedAuthentication. isUserLoggedIn()"  routerLink="/login" class="nav-link navbar-font-bold">Login</a></li> -->
             <li><a *ngIf="hardcodedAuthentication. isUserLoggedIn()"  routerLink="/logout" class="nav-link navbar-font-bold">Logout</a></li>
         </ul>
 

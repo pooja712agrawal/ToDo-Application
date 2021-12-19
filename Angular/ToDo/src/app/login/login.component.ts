@@ -11,7 +11,7 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 export class LoginComponent implements OnInit {
 
   //default values for username and password
-  username = 'test'
+  username = ''
   password = ''
 
   //For authentication

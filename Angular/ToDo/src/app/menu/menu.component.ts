@@ -8,7 +8,6 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 })
 export class MenuComponent implements OnInit {
 
-
   constructor(public hardcodedAuthentication : HardcodedAuthenticationService) { }
 
   ngOnInit(): void {
