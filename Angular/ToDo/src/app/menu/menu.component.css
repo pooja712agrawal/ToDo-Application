@@ -7,3 +7,11 @@
 .navbar-font-bold{
 font-weight: 700;
 }
+
+.mr-2{
+    margin-right: 2%;
+}
+
+.ml-2{
+    margin-left: 2%;
+}
