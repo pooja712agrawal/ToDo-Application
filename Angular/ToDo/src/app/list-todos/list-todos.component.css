@@ -18,6 +18,18 @@
     margin-top: 3%;
 }
 
+.ml-90{
+    margin-left: 90%;
+}
+
 .thead-bg{
     background: darkgray;
+}
+
+.delete-color{
+    color: indianred;
+}
+
+.edit-color{
+    color: seagreen;
 }

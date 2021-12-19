@@ -14,6 +14,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpInterceptorBasicAuthService } from './service/http/http-interceptor-basic-auth.service';
 import { TodoComponent } from './todo/todo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   //UserDefined Components
@@ -33,7 +35,9 @@ import { TodoComponent } from './todo/todo.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
     {provide : HTTP_INTERCEPTORS, useClass : HttpInterceptorBasicAuthService, multi : true}

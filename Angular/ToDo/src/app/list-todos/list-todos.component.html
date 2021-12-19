@@ -3,6 +3,11 @@
 <div class="alert alert-success margin-top" *ngIf = 'deleteMsg'>{{deleteMsg}}</div>
 <div class="container mt-5">
     <h1 class=" text-center">My ToDo's</h1>
+
+    <div class="row width-class ml-90">
+        <button (click)="addTodo()" class="btn btn-success button-width"><i class="material-icons">add_circle</i><span>Add Todo</span></button>
+    </div>
+    
     <div class="table-responsive mt-5">
     <table class="table table-bordered table-hover text-center">
     <thead class="thead-bg">
@@ -21,14 +26,12 @@
             <!-- Here using pipe we are formating Date as simple date -->
             <td>{{todo.targetDate | date}}</td>
             <td>{{todo.done}}</td>
-            <td><button (click)="updatetodo(todo.id)" class="btn btn-success">Update Todo</button></td>
-            <td><button (click)="deleteTodo(todo.id)" class="btn btn-warning">Delete Todo</button></td>
+            <td><button (click)="updatetodo(todo.id)" class="btn"><i class="material-icons edit-color">edit</i></button></td>
+            <td><button (click)="deleteTodo(todo.id)" class="btn"><i class="material-icons delete-color">delete</i></button></td>
         </tr>
     </tbody>
 </table>
 
-<div class="row width-class">
-    <button (click)="addTodo()" class="btn btn-success button-width">Add Todo</button>
-</div>
+
 </div>
 </div>
